@@ -26,7 +26,7 @@ div {
   .main_part {
     position: relative;
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
     background-color: #fffff4;
   }
 
@@ -166,7 +166,7 @@ div {
 
   .add_events_manager {
     position: relative;
-    top: -29px;
+    top: -35px;
     left: 0;
     transform: translateX(0, 0);
     width: 30%;

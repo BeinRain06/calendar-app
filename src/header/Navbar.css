@@ -17,12 +17,13 @@ ul {
 @media (min-width: 210px) {
   .header_nav {
     position: relative;
+    margin-bottom: 1rem;
   }
 
   .nav_logo {
     position: relative;
     width: 100vw;
-    height: 15vh;
+    height: 100px;
     justify-content: space-between;
     padding: 1rem 0;
     background-color: #af3b3b;
@@ -31,10 +32,12 @@ ul {
   .logo {
     position: relative;
     left: 0.5rem;
-    display: block;
+    display: flex;
     padding: 0.5rem;
     border: 2px solid #6c6c81;
     color: #fff;
+    text-align: center;
+    align-items: center;
     background-color: #3b444b;
   }
 
