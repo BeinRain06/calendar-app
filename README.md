@@ -30,7 +30,7 @@ You might be interested on how:
 
 ---
 
-![./Desktop-Calender-App.png](./Desktop-Dictionary-App.png)
+![./Desktop-Calendar-App.png](./Desktop-Calendar-App.png)
 
 ---
 
@@ -70,7 +70,7 @@ Like this:
 
 ## **Picture**
 
-![./Mobile-Calender-App.png](./Mobile-Dictionary-App.png)
+![./Mobile-Calendar-App.png](./Mobile-Calendar-App.png)
 
 ---
 
