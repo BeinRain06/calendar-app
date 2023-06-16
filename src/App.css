@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&family=Tilt+Prism&display=swap");
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Tilt Prism', cursive; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 210px) {
+  .App {
+    text-align: center;
+  }
+
+  .App_container {
+    position: relative;
+  }
+
+  .main_part {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    background-color: #fffff4;
+  }
+
+  .calender_part {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .add_events_manager {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0, -100%);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #005555;
+    margin: auto 0%;
+    transition: all 620ms ease-in-out;
+  }
+
+  .add_events_manager.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%, -5%);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    background-color: #005555;
+    margin: auto 0%;
+    transition: all 620ms ease-in-out;
+  }
+
+  .events_manager_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #222f5b;
+    padding: 1rem;
+    z-index: 100;
+  }
+
+  .events_manager_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translate(-50%, -10%);
+    background-color: #005555;
+    border: 2px solid #222f5b;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .events_title {
+    font-family: "Montserrat, sans-serif";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0.35rem 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .ct_new_event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.35rem;
+    margin: auto;
+  }
+
+  .ct_new_event * {
+    width: 80%;
+    padding: 6px 0;
+    font-size: 12px;
+    border-radius: 12px;
+    margin: auto;
+    border: 1px solid transparent;
+  }
+
+  .input_event {
+    outline: none;
+    padding: 8px;
+    /* border: 2px solid #4a3183; */
+  }
+
+  .btn_event_add {
+    outline: none;
+    color: indianred;
+    background-color: #4a3183;
+    border: 2px solid #fff;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .btn_event_add:hover {
+    color: #fff;
+    border: 2px solid indianred;
+    background-color: #5f6363;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 945px) {
+  .main_part {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+    background-color: #fffff4;
   }
-  to {
-    transform: rotate(360deg);
+
+  .calender_part {
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    z-index: 3;
+  }
+
+  .add_events_manager {
+    position: relative;
+    top: -29px;
+    left: 0;
+    transform: translateX(0, 0);
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    background-color: #e7d16e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .events_manager_content {
+    border: 1px solid transparent;
+    z-index: 1;
+  }
+
+  .events_manager_content::before {
+    display: none;
+  }
+
+  .ct_new_event * {
+    width: 100%;
+    padding: 6px 0;
+    font-size: 12px;
+    border-radius: 12px;
+    margin: auto;
+    border: 1px solid transparent;
   }
 }

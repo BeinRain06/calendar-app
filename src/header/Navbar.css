@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&family=Tilt+Prism&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 210px) {
+  .header_nav {
+    position: relative;
+  }
+
+  .nav_logo {
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: #af3b3b;
+  }
+
+  .logo {
+    position: relative;
+    left: 0.5rem;
+    display: block;
+    padding: 0.5rem;
+    border: 2px solid #6c6c81;
+    color: #fff;
+    background-color: #3b444b;
+  }
+
+  .first_log,
+  .second_log {
+    font-family: "Indie Flower", cursive;
+  }
+
+  .label_mob_calendar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-32%, -50%);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    margin: 0 auto;
+  }
+
+  .bi-mortarboard-fill {
+    font-size: 18px;
+  }
+
+  .label_desk_calendar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  /*menu decorative*/
+
+  .menu_wrap_decorative {
+    display: none;
+    position: relative;
+    top: 0;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 0.35rem;
+    z-index: 5;
+  }
+
+  .menu_decor_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*end menu decorative*/
+
+  .menu_wrap {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 1rem;
+    width: 38px;
+    height: 38px;
+    padding: 0.35rem;
+    z-index: 5;
+  }
+
+  .menu_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b444b;
+    border: 1px solid #f9f9f9;
+    transform: rotate(135deg) scale(0.9);
+    margin: auto;
+    z-index: 1;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .icon_content.active {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #58075f;
+    transform: rotate(0deg) scale(1);
+    border: 1px solid transparent;
+    margin: auto;
+    z-index: 1;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .icon_box_wrapper,
+  .icon_cross_wrapper {
+    position: relative;
+    display: block;
+    width: 94%;
+    height: 94%;
+    justify-self: center;
+    outline: none;
+    border: none;
+    margin: auto;
+    background-color: transparent;
+    z-index: 0;
+  }
+
+  .bi-box-seam-fill {
+    font-size: 24px;
+    color: #7c7c5e;
+    transform: rotate(45deg);
+  }
+
+  .bi-x-lg {
+    font-size: 24px;
+    color: #1bb148;
+  }
+}
+
+@media (min-width: 456px) {
+  /* .label_mob_calendar {
+    position: relative;
+    top: 0.75rem;
+  } */
+
+  .bi-mortarboard-fill {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 945px) {
+  .menu_wrap {
+    display: none;
+  }
+
+  .label_mob_calendar {
+    display: none;
+  }
+
+  .menu_wrap_decorative {
+    display: block;
+  }
+
+  .label_desk_calendar {
+    /*  position: relative;
+    top: 0.5rem;
+    transform: translateX(-22%); */
+    display: flex;
+  }
+
+  .bi-mortarboard-fill {
+    font-size: 22px;
+  }
+}
