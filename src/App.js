@@ -159,10 +159,12 @@ function App() {
               />
               <DatePicker
                 placeholderText="Start Date"
+                className="input_datepicker"
                 onChange={(start) => setNewEvent({ ...newEvent, start: start })}
               ></DatePicker>
               <DatePicker
                 placeholderText="End Date"
+                className="input_datepicker"
                 onChange={(end) => setNewEvent({ ...newEvent, end: end })}
               ></DatePicker>
               <button className="btn_event_add" onClick={handleAddEvent}>

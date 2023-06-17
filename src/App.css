@@ -39,11 +39,10 @@ div {
 
   .add_events_manager {
     position: absolute;
-    top: 0;
+    top: -16px;
     left: 0;
-    transform: translateX(0, -100%);
     width: 100%;
-    height: 50vh;
+    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,16 +50,16 @@ div {
     opacity: 0;
     background-color: #005555;
     margin: auto 0%;
+    z-index: 10;
     transition: all 620ms ease-in-out;
   }
 
   .add_events_manager.show {
     position: absolute;
-    top: 0;
+    top: -16px;
     left: 0;
-    transform: translateX(0%, -5%);
     width: 100%;
-    height: 50vh;
+    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +67,7 @@ div {
     opacity: 1;
     background-color: #005555;
     margin: auto 0%;
+    z-index: 50;
     transition: all 620ms ease-in-out;
   }
 
@@ -81,8 +81,8 @@ div {
     align-items: center;
     text-align: center;
     border: 2px solid #222f5b;
-    padding: 1rem;
-    z-index: 100;
+    padding: 1.5rem 1rem 1.5rem;
+    z-index: 60;
   }
 
   .events_manager_content::before {
@@ -104,15 +104,16 @@ div {
     font-weight: bold;
     font-size: 14px;
     padding: 0.35rem 0.5rem;
-    margin: 0.5rem 0;
   }
 
   .ct_new_event {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 0.35rem;
     margin: auto;
   }
 
@@ -128,12 +129,18 @@ div {
   .input_event {
     outline: none;
     padding: 8px;
-    /* border: 2px solid #4a3183; */
+    margin-bottom: 0.65rem;
+  }
+
+  .input_datepicker {
+    margin-inline: auto;
+    margin-block: 0.35rem;
   }
 
   .btn_event_add {
     outline: none;
     color: indianred;
+    margin-top: 0.7rem;
     background-color: #4a3183;
     border: 2px solid #fff;
     transition: all 0.45s ease-in-out;
@@ -166,11 +173,10 @@ div {
 
   .add_events_manager {
     position: relative;
-    top: -35px;
+    top: -24px;
     left: 0;
-    transform: translateX(0, 0);
     width: 30%;
-    height: 60vh;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,5 +203,21 @@ div {
     border-radius: 12px;
     margin: auto;
     border: 1px solid transparent;
+  }
+
+  .input_event {
+    outline: none;
+    padding: 8px;
+    margin-bottom: 0.65rem;
+  }
+
+  .btn_event_add {
+    outline: none;
+    color: indianred;
+    margin-top: 0.7rem;
+    background-color: #4a3183;
+    border: 2px solid #fff;
+    padding: 0.45rem 0;
+    transition: all 0.45s ease-in-out;
   }
 }
